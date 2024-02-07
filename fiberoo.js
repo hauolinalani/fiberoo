@@ -12,3 +12,15 @@ function fib() {
 
 let fibonacciSequence = fib();
 console.log(fib());
+
+function numsToStrings(arr) {
+  return arr.map(String);
+}
+console.log(numsToStrings(fib()));
+
+function numEvenNums(arr) {
+  let evenNums = arr.filter(num => num % 2 === 0);
+  return evenNums.length;
+}
+
+  console.log(numEvenNums(fib()));
